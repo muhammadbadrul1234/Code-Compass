@@ -2,10 +2,10 @@ import { ReactNode } from "react";
 
 interface ButtonProps {
   children: ReactNode;
-  style: string;
+  color: "primary" | "success" | "danger";
   onClick: () => void;
 }
-const Button = ({ onClick, children, style }: ButtonProps) => {
+const Button = ({ onClick, children, color: style }: ButtonProps) => {
   return (
     <div className="col-md-2 col-6">
       <button
