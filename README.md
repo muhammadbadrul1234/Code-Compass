@@ -3,12 +3,12 @@
 </p>
 <h1 align="center">CODE COMPASS</h1>
 
-
-Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project that aims to provide a comprehensive platform for programming enthusiasts and learners. It incorporates various key features such as course selling, online judge, learning roadmap, and tree structure to create an all-in-one learning and collaboration environment.
+<p align="justify">
+Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project that aims to provide a comprehensive platform for programming enthusiasts and learners. It incorporates various key features such as course selling, online judge, learning roadmap, and tree structure to create an all-in-one learning and collaboration environment. </p>
 
 **Features:**
 
-1. **Course Selling:** Code Compass allows instructors to create and sell programming courses. The platform provides an intuitive course creation interface where instructors can upload course materials, organize lessons, and add quizzes or assignments. Students can browse through the available courses, enroll in their preferred ones, and track their progress as they go through the course content.
+1. **Course Selling:** <p align="justify">Code Compass allows instructors to create and sell programming courses. The platform provides an intuitive course creation interface where instructors can upload course materials, organize lessons, and add quizzes or assignments. Students can browse through the available courses, enroll in their preferred ones, and track their progress as they go through the course content.</p>
 
 2. **Online Judge:** The online judge feature in Code Compass enables users to practice their coding skills and solve programming challenges. It provides a coding environment where users can write their code and submit it to be evaluated against a set of test cases. The online judge system automatically checks the correctness and efficiency of the submitted code, providing instant feedback to users.
 
