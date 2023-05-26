@@ -5,7 +5,6 @@
 
 <p align="justify">
 Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project that aims to provide a comprehensive platform for programming enthusiasts and learners. It incorporates various key features such as course selling, online judge, learning roadmap, and tree structure to create an all-in-one learning and collaboration environment.
-</p>
 
 **Features:**
 
@@ -33,10 +32,9 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 Code Compass is hosted on GitHub, providing a collaborative environment for developers to contribute, improve, and expand the project. The project repository includes the complete source code, documentation, and guidelines for setting up and running the application. Developers can contribute by fixing bugs, implementing new features, or suggesting improvements through pull requests.
 
 Code Compass aims to empower programming learners by providing a comprehensive platform that combines course selling, online judge, learning roadmap, and tree structure features. With its MERN stack implementation and collaborative development on GitHub, it aspires to create an inclusive and vibrant community of learners and instructors.
-</div>
+</p>
 
-
-
+<p align="justify">
 # MERN App Installation
 
 This guide will walk you through the steps to install and run a MERN app on your local machine.
@@ -103,7 +101,8 @@ Before you begin, ensure that you have the following installed on your machine:
    ```
 
    The client should open in your default web browser at `http://localhost:3000`.
-
+    </p>
+<p align="justify">
 ## Usage
 
 You can now use the MERN app on your local machine. Explore the features and functionality provided by the app.
@@ -137,3 +136,4 @@ If you'd like to contribute to this project, please follow these steps:
 ## License
 
 [MIT License](LICENSE)
+    </p>
