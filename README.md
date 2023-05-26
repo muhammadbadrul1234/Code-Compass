@@ -30,3 +30,107 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 Code Compass is hosted on GitHub, providing a collaborative environment for developers to contribute, improve, and expand the project. The project repository includes the complete source code, documentation, and guidelines for setting up and running the application. Developers can contribute by fixing bugs, implementing new features, or suggesting improvements through pull requests.
 
 Code Compass aims to empower programming learners by providing a comprehensive platform that combines course selling, online judge, learning roadmap, and tree structure features. With its MERN stack implementation and collaborative development on GitHub, it aspires to create an inclusive and vibrant community of learners and instructors.
+
+
+
+
+# MERN App Installation
+
+This guide will walk you through the steps to install and run a MERN app on your local machine.
+
+## Prerequisites
+
+Before you begin, ensure that you have the following installed on your machine:
+
+- Node.js: https://nodejs.org
+- MongoDB: https://www.mongodb.com
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository_url>
+   ```
+
+2. Change into the project directory:
+
+   ```bash
+   cd <project_directory>
+   ```
+
+3. Install server dependencies:
+
+   ```bash
+   cd server
+   npm install
+   ```
+
+4. Install client dependencies:
+
+   ```bash
+   cd ../client
+   npm install
+   ```
+
+5. Configuration:
+
+   - Create a `.env` file in the `server` directory.
+   - Add the following environment variables in the `.env` file:
+
+     ```plaintext
+     PORT=3000
+     MONGODB_URI=<your_mongodb_uri>
+     ```
+
+6. Run the server:
+
+   ```bash
+   cd ../server
+   npm start
+   ```
+
+   The server should start running at `http://localhost:3000`.
+
+7. Run the client:
+
+   ```bash
+   cd ../client
+   npm start
+   ```
+
+   The client should open in your default web browser at `http://localhost:3000`.
+
+## Usage
+
+You can now use the MERN app on your local machine. Explore the features and functionality provided by the app.
+
+## Contributing
+
+If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+
+2. Create a new branch:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. Make your changes and commit them:
+
+   ```bash
+   git commit -m 'Add some feature'
+   ```
+
+4. Push to the branch:
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. Open a pull request in the original repository.
+
+## License
+
+[MIT License](LICENSE)
