@@ -34,20 +34,20 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 <p align="justify">Code Compass aims to empower programming learners by providing a comprehensive platform that combines course selling, online judge, learning roadmap, and tree structure features. With its MERN stack implementation and collaborative development on GitHub, it aspires to create an inclusive and vibrant community of learners and instructors.</p>
 
 
-<p align="justify">
+
 #MERN App Installation
 
-This guide will walk you through the steps to install and run a MERN app on your local machine.
+<p align="justify">This guide will walk you through the steps to install and run a MERN app on your local machine.</p>
 
 ## Prerequisites
 
-Before you begin, ensure that you have the following installed on your machine:
+<p align="justify">Before you begin, ensure that you have the following installed on your machine:</p>
 
 - Node.js: https://nodejs.org
 - MongoDB: https://www.mongodb.com
 
 ## Installation
-
+<p align="justify">
 1. Clone the repository:
 
    ```bash
@@ -102,14 +102,14 @@ Before you begin, ensure that you have the following installed on your machine:
 
    The client should open in your default web browser at `http://localhost:3000`.
     </p>
-<p align="justify">
+
 ## Usage
 
-You can now use the MERN app on your local machine. Explore the features and functionality provided by the app.
+<p align="justify">You can now use the MERN app on your local machine. Explore the features and functionality provided by the app.</p>
 
 ## Contributing
 
-If you'd like to contribute to this project, please follow these steps:
+<p align="justify">If you'd like to contribute to this project, please follow these steps:
 
 1. Fork the repository.
 
@@ -131,9 +131,9 @@ If you'd like to contribute to this project, please follow these steps:
    git push origin feature/your-feature-name
    ```
 
-5. Create a pull request in the original repository.
+    5. Create a pull request in the original repository.</p>
 
 ## License
-
+<p align="justify">
 [MIT License](LICENSE)
     </p>
