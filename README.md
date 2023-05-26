@@ -62,45 +62,19 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 3. Install server dependencies:
 
    ```bash
-   cd server
-   npm install
+   npm i
    ```
 
-4. Install client dependencies:
+4. Run the server & Client:
 
    ```bash
-   cd ../client
-   npm install
-   ```
+  npm run dev
 
-5. Configuration:
-
-   - Create a `.env` file in the `server` directory.
-   - Add the following environment variables in the `.env` file:
-
-     ```plaintext
-     PORT=5000
-     ATLAS_URI=<your_mongodb_connection_uri>
-     ```
-
-6. Run the server:
-
-   ```bash
-   cd ../server
-   nodemon server
    ```
 
    The server should start running at `http://localhost:5000`.
 
-7. Run the client:
 
-   ```bash
-   cd ../client
-   npm run dev
-   ```
-
-   The client should open in your default web browser at `http://localhost:5173`.
-    </p>
 
 ## Usage
 
