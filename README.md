@@ -129,7 +129,7 @@ If you'd like to contribute to this project, please follow these steps:
    git push origin feature/your-feature-name
    ```
 
-5. Open a pull request in the original repository.
+5. Create a pull request in the original repository.
 
 ## License
 
