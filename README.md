@@ -1,4 +1,4 @@
-<p align="center-justify">
+<p align="center">
     <img src="https://gurzu.com/img/gurzu/mern-stack-01.png" alt="mongo" height="100" />
 </p>
 <h1 align="center">CODE COMPASS</h1>
