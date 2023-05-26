@@ -1,5 +1,7 @@
-# Code-Compass
-**Code Compass: MERN GitHub Project**
+<p align="center">
+    <img src="./client/public/MERN.png" alt="mongo" height="100" />
+</p>
+<h1 align="center">CODE COMPASS</h1>
 
 Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project that aims to provide a comprehensive platform for programming enthusiasts and learners. It incorporates various key features such as course selling, online judge, learning roadmap, and tree structure to create an all-in-one learning and collaboration environment.
 
