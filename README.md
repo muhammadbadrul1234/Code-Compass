@@ -3,9 +3,9 @@
 </p>
 <h1 align="center">CODE COMPASS</h1>
 
-<div style="text-align: justify">
+<p align="justify">
 Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project that aims to provide a comprehensive platform for programming enthusiasts and learners. It incorporates various key features such as course selling, online judge, learning roadmap, and tree structure to create an all-in-one learning and collaboration environment.
-</div>
+</p>
 
 **Features:**
 
