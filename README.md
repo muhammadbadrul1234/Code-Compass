@@ -87,7 +87,7 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 
    ```bash
    cd ../server
-   npm start
+   nodemon server
    ```
 
    The server should start running at `http://localhost:5000`.
@@ -96,7 +96,7 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 
    ```bash
    cd ../client
-   npm start
+   npm run dev
    ```
 
    The client should open in your default web browser at `http://localhost:5173`.
