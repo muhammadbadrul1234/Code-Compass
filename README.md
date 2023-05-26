@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./client/public/MERN.png" alt="mongo" height="100" />
+    <img src="[./client/public/MERN.png](https://gurzu.com/img/gurzu/mern-stack-01.png)" alt="mongo" height="100" />
 </p>
 <h1 align="center">CODE COMPASS</h1>
 
