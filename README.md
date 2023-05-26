@@ -51,7 +51,7 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/SI-Abid/Code-Compass.git
    ```
 
 2. Change into the project directory:
