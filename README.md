@@ -56,7 +56,7 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 2. Change into the project directory:
 
    ```bash
-   cd <project_directory>
+   cd Code-Compass
    ```
 
 3. Install server dependencies:
