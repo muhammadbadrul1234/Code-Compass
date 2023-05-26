@@ -62,44 +62,17 @@ Before you begin, ensure that you have the following installed on your machine:
 3. Install server dependencies:
 
    ```bash
-   cd server
-   npm install
+   npm i
    ```
 
-4. Install client dependencies:
+4. Run the server & Client:
 
    ```bash
-   cd ../client
-   npm install
-   ```
-
-5. Configuration:
-
-   - Create a `.env` file in the `server` directory.
-   - Add the following environment variables in the `.env` file:
-
-     ```plaintext
-     PORT=3000
-     MONGODB_URI=<your_mongodb_uri>
-     ```
-
-6. Run the server:
-
-   ```bash
-   cd ../server
-   npm start
+   npm run dev
    ```
 
    The server should start running at `http://localhost:3000`.
 
-7. Run the client:
-
-   ```bash
-   cd ../client
-   npm start
-   ```
-
-   The client should open in your default web browser at `http://localhost:3000`.
 
 ## Usage
 
