@@ -5,9 +5,11 @@
 
 <div style="text-align: justify">
 Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project that aims to provide a comprehensive platform for programming enthusiasts and learners. It incorporates various key features such as course selling, online judge, learning roadmap, and tree structure to create an all-in-one learning and collaboration environment.
-
+</div>
+<div style="text-align: justify">
 **Features:**
-
+</div>
+<div style="text-align: justify">
 1. **Course Selling:** Code Compass allows instructors to create and sell programming courses. The platform provides an intuitive course creation interface where instructors can upload course materials, organize lessons, and add quizzes or assignments. Students can browse through the available courses, enroll in their preferred ones, and track their progress as they go through the course content.
 
 2. **Online Judge:** The online judge feature in Code Compass enables users to practice their coding skills and solve programming challenges. It provides a coding environment where users can write their code and submit it to be evaluated against a set of test cases. The online judge system automatically checks the correctness and efficiency of the submitted code, providing instant feedback to users.
@@ -15,6 +17,7 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 3. **Learning Roadmap:** Code Compass includes a learning roadmap feature that guides users through a structured path of learning. It provides a curated set of topics, arranged in a logical order, to help users progress from basic to advanced programming concepts. The learning roadmap can be customized based on individual preferences and learning goals, ensuring a personalized learning experience.
 
 4. **Tree Structure:** The tree structure feature in Code Compass allows users to visualize and navigate through various programming concepts, topics, and subtopics. It provides a hierarchical representation of the programming knowledge, making it easier for users to understand the relationships between different concepts and explore related topics. The tree structure can be expanded or collapsed based on user preferences, allowing for a flexible and intuitive learning experience.
+</div>
 
 **Technology Stack:**
 
