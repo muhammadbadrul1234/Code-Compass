@@ -86,10 +86,10 @@ const App: React.FC = () => {
       <h1 className="text-center mt-2 mb-4">Grocery List</h1>
       <h4 className="text-center">Cart: {cart.join(", ")}</h4>
       <div className="row mb-4 justify-content-center align-items-center">
-        <Button onClick={onSubmit} style="success">
+        <Button onClick={onSubmit} color="success">
           Buy
         </Button>
-        <Button onClick={() => setCart([])} style="danger">
+        <Button onClick={() => setCart([])} color="danger">
           Clear
         </Button>
       </div>
