@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">CODE COMPASS</h1>
 
-<p align="justify">
+
 Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project that aims to provide a comprehensive platform for programming enthusiasts and learners. It incorporates various key features such as course selling, online judge, learning roadmap, and tree structure to create an all-in-one learning and collaboration environment.
 
 **Features:**
@@ -32,7 +32,7 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 Code Compass is hosted on GitHub, providing a collaborative environment for developers to contribute, improve, and expand the project. The project repository includes the complete source code, documentation, and guidelines for setting up and running the application. Developers can contribute by fixing bugs, implementing new features, or suggesting improvements through pull requests.
 
 Code Compass aims to empower programming learners by providing a comprehensive platform that combines course selling, online judge, learning roadmap, and tree structure features. With its MERN stack implementation and collaborative development on GitHub, it aspires to create an inclusive and vibrant community of learners and instructors.
-</p>
+
 
 <p align="justify">
 # MERN App Installation
