@@ -35,7 +35,7 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 
 
 <p align="justify">
-# MERN App Installation
+#MERN App Installation
 
 This guide will walk you through the steps to install and run a MERN app on your local machine.
 
