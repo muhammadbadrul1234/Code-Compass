@@ -68,7 +68,7 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 4. Run the server & Client:
 
    ```bash
-  npm run dev
+    npm run dev
 
    ```
 
