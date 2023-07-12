@@ -4,8 +4,10 @@ import "../css/Signup.css";
 import { useState } from "react";
 import { validateEmail, validatePassword } from "../validation/UserValidation";
 import { auth, db } from "../../config/firebase";
+import { useNavigate } from "react-router-dom";
 
 export const Signup = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [firstName, setFirstName] = useState("");
@@ -43,6 +45,7 @@ export const Signup = () => {
         phone,
       });
       console.log(userCredential);
+      navigate("/");
     } catch (error) {
       console.log(error);
     }
@@ -143,6 +146,9 @@ export const Signup = () => {
                   onChange={toggle}
                 />{" "}
                 Show Password
+              </div>
+              <div>
+                <a href="/login">Already have an account?</a>
               </div>
               {/* Submit */}
               <div className="form-group form-button">

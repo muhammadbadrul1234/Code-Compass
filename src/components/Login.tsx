@@ -3,8 +3,10 @@ import ReactDOM from "react-dom/client";
 import "../css/Login.css";
 import { useState } from "react";
 import { auth } from "../../config/firebase";
+import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
+  const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -22,6 +24,7 @@ export const Login = () => {
         password
       );
       console.log(userCredential);
+      navigate("/");
     } catch (error) {
       console.log(error);
     }
@@ -71,6 +74,9 @@ export const Login = () => {
                   onClick={toggle}
                 />{" "}
                 Show Password
+              </div>
+              <div>
+                <a href="/signup">Don't have an account? Sign Up</a>
               </div>
               {/* Submit */}
               <div className="form-group form-button">
