@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.css";
-import Login from "./Login";
+import Login from "./Signup";
+import Signup from "./Signup";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-      <Login />
+      <Signup />
   </React.StrictMode>
 );
