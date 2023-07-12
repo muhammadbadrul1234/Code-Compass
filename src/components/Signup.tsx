@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./css/Signup.css";
 import { useState } from "react";
-import { validateEmail } from "./validation/UserValidation";
+import { validateEmail, validatePassword } from "../validation/UserValidation";
 
 export const Signup = () => {
   const [email, setEmail] = useState("");
@@ -15,14 +15,18 @@ export const Signup = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    const error = validateEmail(email);
+    let error = validateEmail(email);
     if (error) {
       alert(error);
+      return;
+    }
+    error = validatePassword(password);
+    if (error) {
+      alert(error);
+      return;
     }
     // TODO: Send email and password to server
-
   };
-
 
   return (
     <>
@@ -134,5 +138,4 @@ export const Signup = () => {
       </section>
     </>
   );
-}
-
+};

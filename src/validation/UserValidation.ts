@@ -9,3 +9,14 @@ export const validateEmail = (email: string) => {
   }
   return errors;
 };
+
+export const validatePassword = (password: string) => {
+  let errors = {};
+
+  if (!password) {
+    errors = "Password is required";
+  } else if (password.length < 6) {
+    errors = "Password needs to be 6 characters or more";
+  }
+  return errors;
+};
