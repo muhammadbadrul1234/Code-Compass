@@ -1,12 +1,22 @@
-export default function Validation(values) {
-    let errors = {};
-    const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+export const validateEmail = (email: string) => {
+  let errors = {};
+  const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
 
-    if (!values.email) {
-        errors.email = "Email is required";
-    }
-    else if (!emailRegex.test(values.email)) {
-        errors.email = "Email is invalid";
-    }
-}
+  if (!email) {
+    errors = "Email required";
+  } else if (!emailRegex.test(email)) {
+    errors = "Email is invalid";
+  }
+  return errors;
+};
+
+export const validatePassword = (password: string) => {
+  let errors = {};
+
+  if (!password) {
+    errors = "Password is required";
+  } else if (password.length < 6) {
+    errors = "Password needs to be 6 characters or more";
+  }
+  return errors;
+};

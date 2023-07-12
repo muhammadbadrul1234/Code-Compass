@@ -2,22 +2,31 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./css/Signup.css";
 import { useState } from "react";
+import { validateEmail, validatePassword } from "../validation/UserValidation";
 
+export const Signup = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
-
-function Signup() {
-  let [passwordShown, setPasswordShown] = useState(true);
-
-  const handleChange = (e: any) => {
-    if (e.target.value === "true") {
-      setPasswordShown(true);
-    }
-    setPasswordShown(e.target.value);
+  const handleChange = (checked: boolean) => {
+    setShowPassword(checked);
   };
 
- 
-
-
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    let error = validateEmail(email);
+    if (error) {
+      alert(error);
+      return;
+    }
+    error = validatePassword(password);
+    if (error) {
+      alert(error);
+      return;
+    }
+    // TODO: Send email and password to server
+  };
 
   return (
     <>
@@ -60,6 +69,7 @@ function Signup() {
                   id="email"
                   autoComplete="off"
                   placeholder="Email"
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
 
@@ -84,6 +94,7 @@ function Signup() {
                   id="password"
                   autoComplete="off"
                   placeholder="Password"
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
 
@@ -118,6 +129,7 @@ function Signup() {
                   id="signup"
                   className="form-submit"
                   value="Signup"
+                  onClick={handleSubmit}
                 />
               </div>
             </form>
@@ -126,6 +138,4 @@ function Signup() {
       </section>
     </>
   );
-}
-
-export default Signup;
+};
