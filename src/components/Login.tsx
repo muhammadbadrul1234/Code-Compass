@@ -4,6 +4,7 @@ import "../css/Login.css";
 import { useState } from "react";
 import { auth } from "../../config/firebase";
 import { useNavigate } from "react-router-dom";
+import { Navbar } from "./Navbar";
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -32,7 +33,10 @@ export const Login = () => {
 
   return (
     <>
+      <Navbar />
       <section className="Login">
+        {/* <Header/> */}
+
         <div className="container mt-5">
           <div className="Login-content">
             <div className="Login-form"></div>
