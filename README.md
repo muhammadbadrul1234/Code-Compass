@@ -16,7 +16,6 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 
 4. **Tree Structure:** <p align="justify">The tree structure feature in Code Compass allows users to visualize and navigate through various programming concepts, topics, and subtopics. It provides a hierarchical representation of the programming knowledge, making it easier for users to understand the relationships between different concepts and explore related topics. The tree structure can be expanded or collapsed based on user preferences, allowing for a flexible and intuitive learning experience.</p>
 
-
 **Technology Stack:**
 
 - **Front-end:** <p align="justify">The front-end of Code Compass is built using React.js, a popular JavaScript library for building user interfaces. React.js provides a component-based architecture, enabling modular and reusable code development. It allows for efficient rendering and provides a smooth and interactive user experience.</p>
@@ -33,8 +32,6 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 
 <p align="justify">Code Compass aims to empower programming learners by providing a comprehensive platform that combines course selling, online judge, learning roadmap, and tree structure features. With its MERN stack implementation and collaborative development on GitHub, it aspires to create an inclusive and vibrant community of learners and instructors.</p>
 
-
-
 ## MERN App Installation
 
 <p align="justify">This guide will walk you through the steps to install and run a MERN app on your local machine.</p>
@@ -47,61 +44,37 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
 - MongoDB: https://www.mongodb.com
 
 ## Installation
+
 <p align="justify">
+
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/SI-Abid/Code-Compass.git
    ```
 
 2. Change into the project directory:
 
    ```bash
-   cd <project_directory>
+   cd Code-Compass
    ```
 
 3. Install server dependencies:
 
    ```bash
-   cd server
-   npm install
+   npm i
    ```
 
-4. Install client dependencies:
+4. Run the server & Client:
 
    ```bash
-   cd ../client
-   npm install
+    npm run dev
+
    ```
 
-5. Configuration:
+   The server should start running at `http://localhost:5000`.
 
-   - Create a `.env` file in the `server` directory.
-   - Add the following environment variables in the `.env` file:
 
-     ```plaintext
-     PORT=3000
-     MONGODB_URI=<your_mongodb_uri>
-     ```
-
-6. Run the server:
-
-   ```bash
-   cd ../server
-   npm start
-   ```
-
-   The server should start running at `http://localhost:3000`.
-
-7. Run the client:
-
-   ```bash
-   cd ../client
-   npm start
-   ```
-
-   The client should open in your default web browser at `http://localhost:3000`.
-    </p>
 
 ## Usage
 
@@ -131,9 +104,10 @@ Code Compass is a MERN (MongoDB, Express.js, React.js, Node.js) GitHub project t
    git push origin feature/your-feature-name
    ```
 
-    5. Create a pull request in the original repository.</p>
+   5. Create a pull request in the original repository.</p>
 
 ## License
+
 <p align="justify">
 [MIT License](LICENSE)
     </p>
