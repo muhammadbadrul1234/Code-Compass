@@ -1,9 +1,35 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./css/Login.css";
+import "../css/Login.css";
 import { useState } from "react";
+import { auth } from "../../config/firebase";
+import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
+  const navigate = useNavigate();
+  const [user, setUser] = useState(null);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
+  const toggle = () => {
+    setShowPassword(!showPassword);
+  };
+
+  const handleLogin = async (e: any) => {
+    e.preventDefault();
+    try {
+      const userCredential = await auth.signInWithEmailAndPassword(
+        email,
+        password
+      );
+      console.log(userCredential);
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <>
       <section className="Login">
@@ -16,11 +42,12 @@ export const Login = () => {
               <div className="form-group">
                 <label htmlFor="email"></label>
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   id="email"
                   autoComplete="off"
                   placeholder="Email"
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
 
@@ -28,11 +55,12 @@ export const Login = () => {
               <div className="form-group">
                 <label htmlFor="password"></label>
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   name="password"
                   id="password"
                   autoComplete="off"
                   placeholder="Password"
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
 
@@ -43,8 +71,12 @@ export const Login = () => {
                   name="checkbox"
                   id="checkbox"
                   className="checkbox"
+                  onClick={toggle}
                 />{" "}
                 Show Password
+              </div>
+              <div>
+                <a href="/signup">Don't have an account? Sign Up</a>
               </div>
               {/* Submit */}
               <div className="form-group form-button">
@@ -54,6 +86,7 @@ export const Login = () => {
                   id="Login"
                   className="form-submit"
                   value="Login"
+                  onClick={handleLogin}
                 />
               </div>
             </form>
@@ -62,5 +95,4 @@ export const Login = () => {
       </section>
     </>
   );
-}
-
+};

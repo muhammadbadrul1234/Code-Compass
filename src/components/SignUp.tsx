@@ -1,31 +1,54 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./css/Signup.css";
+import "../css/Signup.css";
 import { useState } from "react";
 import { validateEmail, validatePassword } from "../validation/UserValidation";
+import { auth, db } from "../../config/firebase";
+import { useNavigate } from "react-router-dom";
 
 export const Signup = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phone, setPhone] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
-  const handleChange = (checked: boolean) => {
-    setShowPassword(checked);
+  const toggle = () => {
+    setShowPassword(!showPassword);
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSignUp = async (e: any) => {
     e.preventDefault();
     let error = validateEmail(email);
     if (error) {
-      alert(error);
+      console.log(error);
       return;
     }
     error = validatePassword(password);
     if (error) {
-      alert(error);
+      console.log(error);
       return;
     }
+
     // TODO: Send email and password to server
+    try {
+      const userCredential = await auth.createUserWithEmailAndPassword(
+        email,
+        password
+      );
+      db.collection("users").doc(userCredential.user?.uid).set({
+        firstName,
+        lastName,
+        email,
+        phone,
+      });
+      console.log(userCredential);
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -45,6 +68,7 @@ export const Signup = () => {
                   id="first-name"
                   autoComplete="off"
                   placeholder="First Name"
+                  onChange={(e) => setFirstName(e.target.value)}
                 />
               </div>
 
@@ -57,6 +81,7 @@ export const Signup = () => {
                   id="last-name"
                   autoComplete="off"
                   placeholder="Last Name"
+                  onChange={(e) => setLastName(e.target.value)}
                 />
               </div>
 
@@ -64,7 +89,7 @@ export const Signup = () => {
               <div className="form-group">
                 <label htmlFor="email"></label>
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   id="email"
                   autoComplete="off"
@@ -82,6 +107,7 @@ export const Signup = () => {
                   id="phone"
                   autoComplete="off"
                   placeholder="Phone"
+                  onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
 
@@ -89,7 +115,7 @@ export const Signup = () => {
               <div className="form-group">
                 <label htmlFor="password"></label>
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   name="password"
                   id="password"
                   autoComplete="off"
@@ -102,7 +128,7 @@ export const Signup = () => {
               <div className="form-group">
                 <label htmlFor="confirm-password"></label>
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   name="confirm-password"
                   id="confirm-password"
                   autoComplete="off"
@@ -117,9 +143,12 @@ export const Signup = () => {
                   name="checkbox"
                   id="checkbox"
                   className="checkbox"
-                  onChange={() => handleChange(true)}
+                  onChange={toggle}
                 />{" "}
                 Show Password
+              </div>
+              <div>
+                <a href="/login">Already have an account?</a>
               </div>
               {/* Submit */}
               <div className="form-group form-button">
@@ -129,7 +158,7 @@ export const Signup = () => {
                   id="signup"
                   className="form-submit"
                   value="Signup"
-                  onClick={handleSubmit}
+                  onClick={handleSignUp}
                 />
               </div>
             </form>

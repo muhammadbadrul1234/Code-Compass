@@ -1,5 +1,5 @@
 export const validateEmail = (email: string) => {
-  let errors = {};
+  let errors = null;
   const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
 
   if (!email) {
@@ -11,7 +11,7 @@ export const validateEmail = (email: string) => {
 };
 
 export const validatePassword = (password: string) => {
-  let errors = {};
+  let errors = null;
 
   if (!password) {
     errors = "Password is required";
