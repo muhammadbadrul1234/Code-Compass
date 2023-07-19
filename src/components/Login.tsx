@@ -5,6 +5,7 @@ import { useState } from "react";
 import { auth } from "../../config/firebase";
 import firebase from "firebase";
 import { useNavigate } from "react-router-dom";
+import { Navbar } from "./Navbar";
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -34,14 +35,17 @@ export const Login = () => {
 
   return (
     <>
+      <Navbar />
       <section className="Login">
+        {/* <Header/> */}
+
         <div className="container mt-5">
           <div className="Login-content">
-            <div className="Login-form"></div>
+            <div className="Login-h"></div>
             <h2>Login</h2>
-            <form className="register-form" id="register-form">
+            <form className="Login-form" id="Login-form">
               {/* Email */}
-              <div className="form-group">
+              <div className="login-form-group">
                 <label htmlFor="email"></label>
                 <input
                   type="email"

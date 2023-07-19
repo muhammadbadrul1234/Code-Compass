@@ -5,6 +5,7 @@ import { useState } from "react";
 import { validateEmail, validatePassword } from "../validation/UserValidation";
 import { auth, db } from "../../config/firebase";
 import { useNavigate } from "react-router-dom";
+import { Navbar } from "./Navbar";
 
 export const Signup = () => {
   const navigate = useNavigate();
@@ -53,14 +54,15 @@ export const Signup = () => {
 
   return (
     <>
+      <Navbar />
       <section className="signup">
         <div className="container mt-5">
           <div className="signup-content">
             <div className="signup-form"></div>
-            <h2>Create Your Account</h2>
+            <h2>Create your Account</h2>
             <form className="register-form" id="register-form">
               {/* First Name */}
-              <div className="form-group">
+              <div className="signup-form-group">
                 <label htmlFor="first-name"></label>
                 <input
                   type="text"
@@ -73,7 +75,7 @@ export const Signup = () => {
               </div>
 
               {/* Last Name */}
-              <div className="form-group">
+              <div className="signup-form-group">
                 <label htmlFor="last-name"></label>
                 <input
                   type="text"
@@ -86,7 +88,7 @@ export const Signup = () => {
               </div>
 
               {/* Email */}
-              <div className="form-group">
+              <div className="signup-form-group">
                 <label htmlFor="email"></label>
                 <input
                   type="email"
@@ -99,7 +101,7 @@ export const Signup = () => {
               </div>
 
               {/* Phone */}
-              <div className="form-group">
+              <div className="signup-form-group">
                 <label htmlFor="phone"></label>
                 <input
                   type="text"
@@ -112,7 +114,7 @@ export const Signup = () => {
               </div>
 
               {/* Password */}
-              <div className="form-group">
+              <div className="signup-form-group">
                 <label htmlFor="password"></label>
                 <input
                   type={showPassword ? "text" : "password"}
@@ -125,7 +127,7 @@ export const Signup = () => {
               </div>
 
               {/* Confirm Password */}
-              <div className="form-group">
+              <div className="signup-form-group">
                 <label htmlFor="confirm-password"></label>
                 <input
                   type={showPassword ? "text" : "password"}
@@ -159,6 +161,20 @@ export const Signup = () => {
                   className="form-submit"
                   value="Signup"
                   onClick={handleSignUp}
+                />
+              </div>
+              <div className="or">
+                <span>Or</span>
+              </div>
+              {/* Google Signup */}
+              <div className="gform-group form-button">
+                <input
+                  type="gsubmit"
+                  name="gsignup"
+                  id="gsignup"
+                  className="gform-submit"
+                  value="Signup with Google"
+                  // onClick={handleSignUp}
                 />
               </div>
             </form>
