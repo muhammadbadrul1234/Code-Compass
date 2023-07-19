@@ -39,11 +39,11 @@ export const Login = () => {
 
         <div className="container mt-5">
           <div className="Login-content">
-            <div className="Login-form"></div>
+            <div className="Login-h"></div>
             <h2>Login</h2>
-            <form className="register-form" id="register-form">
+            <form className="Login-form" id="Login-form">
               {/* Email */}
-              <div className="form-group">
+              <div className="login-form-group">
                 <label htmlFor="email"></label>
                 <input
                   type="email"

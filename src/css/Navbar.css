@@ -17,10 +17,17 @@ li{
     align-items: center;
     justify-content: center;
 }
+img{
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 10rem;
+
+}
 
 .logo{
-    width: 300px;
-    display: grid;
+    display: flex;
     grid-column: 1/2;
     align-items: center;
     justify-content: center;
