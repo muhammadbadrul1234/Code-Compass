@@ -7,6 +7,8 @@ import { Login } from "./components/Login";
 import { Signup } from "./components/SignUp";
 import { Navbar } from "./components/Navbar";
 import { AboutUs } from "./components/AboutUs";
+import { UserData } from "./sevices/UserData";
+
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -18,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 
         <Route path="/Navbar" element={<Navbar />} />
         <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/ud" element={<UserData />} />
       </Routes>
     </Router>
   </React.StrictMode>
