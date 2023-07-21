@@ -3,12 +3,13 @@ import ReactDOM from "react-dom/client";
 import "../css/Login.css";
 import { useState } from "react";
 import { auth } from "../../config/firebase";
+import firebase from "firebase";
 import { useNavigate } from "react-router-dom";
 import { Navbar } from "./Navbar";
 
 export const Login = () => {
   const navigate = useNavigate();
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState<firebase.User | null>(null);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -24,6 +25,7 @@ export const Login = () => {
         email,
         password
       );
+      userCredential.user && setUser(userCredential.user);
       console.log(userCredential);
       navigate("/");
     } catch (error) {
