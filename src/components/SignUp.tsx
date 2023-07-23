@@ -4,6 +4,11 @@ import "../css/Signup.css";
 import { useState } from "react";
 import { validateEmail, validatePassword } from "../validation/UserValidation";
 import { auth, db } from "../../config/firebase";
+import { initializeApp } from "firebase/app";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import * as firebase from "firebase/app"; 
+import "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import { Navbar } from "./Navbar";
 
@@ -35,10 +40,11 @@ export const Signup = () => {
 
     // TODO: Send email and password to server
     try {
-      const userCredential = await auth.createUserWithEmailAndPassword(
+      const userCredential = await createUserWithEmailAndPassword(auth,
         email,
         password
       );
+      
       db.collection("users").doc(userCredential.user?.uid).set({
         firstName,
         lastName,
