@@ -7,7 +7,9 @@ import { Login } from "./components/Login";
 import { Signup } from "./components/SignUp";
 import { Navbar } from "./components/Navbar";
 import { AboutUs } from "./components/AboutUs";
-import { UserData } from "./sevices/UserData";
+import { UserData } from "./components/UserData";
+import connects from "./components/db";
+
 
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
@@ -24,4 +26,5 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       </Routes>
     </Router>
   </React.StrictMode>
+  
 );
